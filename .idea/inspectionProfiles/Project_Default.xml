@@ -1,0 +1,60 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="84" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="17">
+            <item index="0" class="java.lang.String" itemvalue="h5py" />
+            <item index="1" class="java.lang.String" itemvalue="pytorch" />
+            <item index="2" class="java.lang.String" itemvalue="torch" />
+            <item index="3" class="java.lang.String" itemvalue="UniTok" />
+            <item index="4" class="java.lang.String" itemvalue="refconfig" />
+            <item index="5" class="java.lang.String" itemvalue="baidu-aip" />
+            <item index="6" class="java.lang.String" itemvalue="requests" />
+            <item index="7" class="java.lang.String" itemvalue="pypinyin" />
+            <item index="8" class="java.lang.String" itemvalue="tokenizers" />
+            <item index="9" class="java.lang.String" itemvalue="openai" />
+            <item index="10" class="java.lang.String" itemvalue="tiktoken" />
+            <item index="11" class="java.lang.String" itemvalue="pytest" />
+            <item index="12" class="java.lang.String" itemvalue="flash-attn" />
+            <item index="13" class="java.lang.String" itemvalue="einop" />
+            <item index="14" class="java.lang.String" itemvalue="pigmento" />
+            <item index="15" class="java.lang.String" itemvalue="transformers" />
+            <item index="16" class="java.lang.String" itemvalue="mysqlclient" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N812" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingNamesInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="torch.backends.cuda" />
+          <option value="torch.backends.cudnn" />
+          <option value="object.cluster_centers_" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
