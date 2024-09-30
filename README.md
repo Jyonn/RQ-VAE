@@ -5,16 +5,6 @@ This repository is built on top of [this repository](https://github.com/RUCAIBox
 ## Step 1 (Prepare Embeddings)
 
 ```bash
-python -u generate_indices_distance.py \
-  --dataset $Dataset \
-  --device cuda:0 \
-  --ckpt_path log/$Dataset/llama_256/best_collision_model.pth \
-  --output_dir $OUTPUT_DIR \
-  --output_file ${Dataset}.index_lemb.json
-```
-
-## Step 2 (Export)
-```bash
 python -u main.py \
   --lr 1e-3 \
   --epochs 10000 \
@@ -32,4 +22,16 @@ python -u main.py \
   --device cuda:2 \
   --data_path ../BenchLLM4RS/export/mind/llama1-embeds.npy \
   --ckpt_dir ./mind.llama1
+```
+
+
+## Step 2 (Export)
+
+```bash
+python -u generate_indices_distance.py \
+  --dataset $Dataset \
+  --device cuda:0 \
+  --ckpt_path log/$Dataset/llama_256/best_collision_model.pth \
+  --output_dir $OUTPUT_DIR \
+  --output_file ${Dataset}.index_lemb.json
 ```
